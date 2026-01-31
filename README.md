@@ -47,7 +47,7 @@ AluraBank é uma aplicação bancária desenvolvida em Flutter com foco total em
 - `Ações de Teste`: Simulação de gestos e interações do usuário (tap, drag, enterText)
 - `build_runner`: Geração automática de código para mocks
 
-**PacotComo Executar o Projeto
+## Como Executar o Projeto
 
 **Pré-requisitos:**
 - [Flutter SDK](https://docs.flutter.dev/get-started/install) versão 3.0.0 ou superior
@@ -82,7 +82,7 @@ flutter test
 flutter test --coverage
 
 # Rodar um arquivo de teste específico
-flutter test test/models/bank_test.dart
+flutter test test/bank_model_test.dart
 ```
 
 ## 📚 Sobre o Bootcamp
@@ -100,4 +100,3 @@ Este projeto foi desenvolvido durante o **Bootcamp Santander 2025 - Desenvolvime
 Gostou do projeto e quer conhecer mais? Você pode [acessar o curso]() que desenvolve o projeto desde o começo!
 
 Esse curso faz parte da [formação de Flutter da Alura](https://cursos.alura.com.br/formacao-flutter)
-
