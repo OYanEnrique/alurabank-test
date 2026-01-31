@@ -54,4 +54,4 @@ testWidgets('When tapdeposit should increase 10', (tester) async{
   await tester.pumpAndSettle();
   expect(find.text('\$10.0'), findsOneWidget);
 });
-}
+} 

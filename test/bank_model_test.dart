@@ -21,4 +21,4 @@ void main() {
     bank.transfer(10);
     expect(bank.points, 10);
   });
-}
+} 
