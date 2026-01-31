@@ -21,6 +21,11 @@ Projeto desenvolvido durante o **Bootcamp Santander 2025 de Desenvolvimento Mobi
 
 AluraBank é uma aplicação bancária desenvolvida em Flutter com foco total em **testes automatizados**. O projeto implementa uma cobertura completa de testes para garantir qualidade, confiabilidade e manutenibilidade do código.
 
+### Novidades e Melhorias Recentes
+- Adicionado arquivo de teste de widget: `test/home_test.dart` cobrindo interface, interações e widgets customizados
+- Refatoração e padronização dos testes de modelo em `test/bank_model_test.dart`
+- Cobertura de testes ampliada para componentes visuais e lógicas de negócio
+
 ### Recursos Testados
 - Modelos de dados e regras de negócio
 - Componentes visuais e interações do usuário
@@ -47,6 +52,12 @@ AluraBank é uma aplicação bancária desenvolvida em Flutter com foco total em
 - `Ações de Teste`: Simulação de gestos e interações do usuário (tap, drag, enterText)
 - `build_runner`: Geração automática de código para mocks
 
+## 📂 Estrutura dos Testes
+
+Os testes estão organizados na pasta `test/`:
+- `bank_model_test.dart`: Testes de unidade para o modelo de dados do banco
+- `home_test.dart`: Testes de widget para a tela principal e componentes visuais
+
 ## Como Executar o Projeto
 
 **Pré-requisitos:**
@@ -60,13 +71,17 @@ AluraBank é uma aplicação bancária desenvolvida em Flutter com foco total em
 git clone https://github.com/OYanEnrique/alurabank-test.git
 
 # Entre na pasta do projeto
-cd alurabank-test
+cd alura_testes
 
 # Instale as dependências
 flutter pub get
 
-# Execute os testes
+# Execute todos os testes
 flutter test
+
+# Execute um teste específico
+flutter test test/bank_model_test.dart
+flutter test test/home_test.dart
 
 # Execute o app
 flutter run
@@ -83,6 +98,7 @@ flutter test --coverage
 
 # Rodar um arquivo de teste específico
 flutter test test/bank_model_test.dart
+flutter test test/home_test.dart
 ```
 
 ## 📚 Sobre o Bootcamp
@@ -91,8 +107,7 @@ Este projeto foi desenvolvido durante o **Bootcamp Santander 2025 - Desenvolvime
 
 ---
 
-**Desenvolvido durante o Bootcamp Santander 2025** 🚀uina
-- Ter a [SDK do Flutter](https://docs.flutter.dev/get-started/install) na versão 3.0.0
+**Desenvolvido durante o Bootcamp Santander 2025** 🚀
 
 
 ## 📚 Mais informações do curso
