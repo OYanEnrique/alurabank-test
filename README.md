@@ -22,9 +22,13 @@ Projeto desenvolvido durante o **Bootcamp Santander 2025 de Desenvolvimento Mobi
 AluraBank é uma aplicação bancária desenvolvida em Flutter com foco total em **testes automatizados**. O projeto implementa uma cobertura completa de testes para garantir qualidade, confiabilidade e manutenibilidade do código.
 
 ### Novidades e Melhorias Recentes
+- **Implementação de Mocks com Mockito**: Criado teste mock para `BankHttp` usando `@GenerateMocks` e `build_runner`
+- **Arquivo de teste HTTP**: Adicionado `test/bank_http_test.dart` para testar comunicação com API externa
+- **Geração automática de código**: Configurado `build_runner` para gerar mocks automaticamente
 - Adicionado arquivo de teste de widget: `test/home_test.dart` cobrindo interface, interações e widgets customizados
 - Refatoração e padronização dos testes de modelo em `test/bank_model_test.dart`
 - Cobertura de testes ampliada para componentes visuais e lógicas de negócio
+- **Correções de código**: Removidos imports não utilizados e código morto (dead code)
 
 ### Recursos Testados
 - Modelos de dados e regras de negócio
@@ -57,6 +61,20 @@ AluraBank é uma aplicação bancária desenvolvida em Flutter com foco total em
 Os testes estão organizados na pasta `test/`:
 - `bank_model_test.dart`: Testes de unidade para o modelo de dados do banco
 - `home_test.dart`: Testes de widget para a tela principal e componentes visuais
+- `bank_http_test.dart`: Testes com mocks para requisições HTTP à API de cotação
+- `bank_http_test.mocks.dart`: Arquivo gerado automaticamente com mocks do Mockito
+
+## 🔧 Gerando Mocks
+
+Para gerar ou atualizar os arquivos de mock:
+
+```bash
+# Gerar mocks usando build_runner
+dart run build_runner build
+
+# Gerar mocks e limpar arquivos antigos
+dart run build_runner build --delete-conflicting-outputs
+```
 
 ## Como Executar o Projeto
 
